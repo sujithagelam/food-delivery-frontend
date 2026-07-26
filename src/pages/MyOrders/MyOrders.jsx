@@ -16,6 +16,7 @@ const MyOrders = () => {
       {},
       { headers: { token } },
     );
+    console.log(response.data);
     setData(response.data.data);
   };
   useEffect(() => {
